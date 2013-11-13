@@ -86,7 +86,7 @@ RideRequests
 - LastestArrivalTime (time) 
 - DaysRequired (int)
 
- Trips
+Trips
 - Route (int) ...joins to a routes.id
 - TripDate (date)
 - RideRequest (int)

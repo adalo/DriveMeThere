@@ -3,7 +3,7 @@ DriveMeThere
 
 API for DriveMeThere App created for Cape Breton Hackathon 2
 
-Specs:
+App Vision, Features and Components:
 
 - People who have a car and willing to drive people
 - People who are looking for a ride
@@ -29,8 +29,6 @@ Specs:
 
 
 - Rating system for both drivers and passengers
-
-
 - profile page
 - driver route create (including dates the route is driven)
 - passenger ride request create (including earliest departure, latest arrival time)
@@ -39,14 +37,10 @@ Specs:
 * index of routes for passengers to review and pin requests on
 * map of day's route for driver
 
-====
-
-- Elements & Properites
-- APP STACK
-- UI
-- Functions
 
 ====
+
+Future Features:
 
 - Sign on with Facebook & Facebook integration (I.E. rides with friends, co workers etc.)
 - leapfrog fulfillment of routes (i.e. we can't get your to X but we can get you to Y and then X with two hops)
@@ -54,6 +48,9 @@ Specs:
 - ability to bid what you'll pay for the route / transfer funds through app
 - communication "Ride Accepted", "On the way", "Running late", "Cancelled", "Missed Pickup"
 
+====
+
+Database Schema:
 
 Users
 	- Id (int) ...primary key, max 11 digits

@@ -53,41 +53,41 @@ Future Features:
 Database Schema:
 
 Users
-	- Id (int) ...primary key, max 11 digits
-	- Email (str)
-	- CryptedPassword (str)
-	- Driver (bool)
-	- Passenger (bool)
-	- FullName (str)
-	- Age (int) - max 3 digits
-	- Smoker (bool)
+- Id (int) ...primary key, max 11 digits
+- Email (str)
+- CryptedPassword (str)
+- Driver (bool)
+- Passenger (bool)
+- FullName (str)
+- Age (int) - max 3 digits
+- Smoker (bool)
 
 Routes
-	- Id (int) ...primary key, max 11 digits
-	- Driver (int) ...joins to a users.id, max 11 digits
-	- OriginAddress (str)
-	- OriginCoordinates (points) ...calculated from posting origin_address to API
-	- DestinationAddress (str)
-	- DestinationCoordinates (str) ...should be a CSV pair of coordinates i.e. “45.28181832,47.2812818” 
- 	- DepartureTime (time) ...HH:MM:SS
- 	- LatestArrivalTime (time) ...HH:MM:SS
- 	- EstimatedArrivalTime (time) ...HH:MM:SS, calculated from posting route to API
- 	- DaysAvailable (str) ...should be a CSV list of days enabled i.e. “1, 3, 7” would map to Mon, Wed, Fri
- 	- TotalSeatsAvailable (int)
+- Id (int) ...primary key, max 11 digits
+- Driver (int) ...joins to a users.id, max 11 digits
+- OriginAddress (str)
+- OriginCoordinates (points) ...calculated from posting origin_address to API
+- DestinationAddress (str)
+- DestinationCoordinates (str) ...should be a CSV pair of coordinates i.e. “45.28181832,47.2812818” 
+- DepartureTime (time) ...HH:MM:SS
+- LatestArrivalTime (time) ...HH:MM:SS
+- EstimatedArrivalTime (time) ...HH:MM:SS, calculated from posting route to API
+- DaysAvailable (str) ...should be a CSV list of days enabled i.e. “1, 3, 7” would map to Mon, Wed, Fri
+- TotalSeatsAvailable (int)
 
 RideRequests
-	- Id
-	- Passenger (int) ...joins to a users.id
-	- OriginAddress (str)
-	- OriginCoordinates (str)
-	- DesintationAddress (str)
-	- DesinationCoordinates (str)
-	- PreferredDepartureTime (time)
-	- LastestArrivalTime (time) 
-	- DaysRequired (int)
+- Id
+- Passenger (int) ...joins to a users.id
+- OriginAddress (str)
+- OriginCoordinates (str)
+- DesintationAddress (str)
+- DesinationCoordinates (str)
+- PreferredDepartureTime (time)
+- LastestArrivalTime (time) 
+- DaysRequired (int)
 
  Trips
- 	- Route (int) ...joins to a routes.id
- 	- TripDate (date)
- 	- RideRequest (int)
+- Route (int) ...joins to a routes.id
+- TripDate (date)
+- RideRequest (int)
 
